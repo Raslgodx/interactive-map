@@ -3,29 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Map</title>
+    <title>Interactive Map — Calibration</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="map-container" id="mapContainer">
-        <!-- Основная картинка -->
-        <img src="images/main.jpg" alt="Map" class="map-image" id="mapImage" draggable="false">
-        
-        <!-- Затемняющий оверлей -->
-        <div class="overlay" id="overlay"></div>
+        <img src="images/main.png" alt="Map" class="map-image" id="mapImage" draggable="false">
 
-        <!-- Интерактивные зоны -->
-        <div class="zone zone-1" data-zone="group1"></div>
-        <div class="zone zone-2" data-zone="group1"></div>
-        <div class="zone zone-3" data-zone="group1"></div>
-
-        <!-- Общая подсказка -->
-        <div class="tooltip" id="tooltip">
-            <div class="tooltip-title">Информация</div>
-            <div class="tooltip-text">Здесь будет текст подсказки. Замените на нужный текст.</div>
-        </div>
+        <!-- Зоны всегда видимы для калибровки -->
+        <div class="zone zone-1"></div>
+        <div class="zone zone-2"></div>
+        <div class="zone zone-3"></div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
